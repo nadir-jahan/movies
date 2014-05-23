@@ -2,7 +2,7 @@ MoviesRecommendation::Application.routes.draw do
   resources  :users
   resources  :movies do
     member do
-         post 'movie_like'   
+         post 'like'   
     end
   end 
 

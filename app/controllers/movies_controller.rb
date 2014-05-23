@@ -29,7 +29,7 @@ def destroy
 	render :json =>  { :message =>" Movie has been successfully deleted from system" } 	
    end
 end
-def movie_like
+def like
 	user = User.find_by_id( params[:movie][:user_id])
 	 # render :json =>  {:message =>" You have already liked this movie" }
 	movie = Movie.find_by_id(params[:id])
