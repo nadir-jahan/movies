@@ -1,0 +1,30 @@
+WebServices
+1) Create User
+ url: App_URL/users   method :post
+
+parameter:{"user":{"email":"nadirjahan@yahoo.com","name": "nadir"}}   
+
+2) Update User 
+url: App_URL/users/:id   method :put
+parameters:{"user":{"email":"nadirjahan@yahoo.com","name": "nadir jahan"}} 
+
+3) Delete User 
+url: App_URL/users/:id   delete :put
+parameters:nil
+
+4) Create Movie
+url: App_URL/movie method post
+params: {"movie":{"title":"some thing","genres": "type","year":"2014-09-09"}}
+
+5) Update Movie 
+url: App_URL/movie/:id  method put
+params: {"movie":{"title":"some thing","genres": "type","year":"2013-09-09"}}
+6) Delete Movie
+url: App_URL/movie/:id
+params: nil
+7) movie like
+url :url: App_URL/movie/:id/like  method post
+params{"movie":{"user_id":1,"is_like":true}}
+
+   
+
